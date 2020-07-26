@@ -65,8 +65,12 @@ if (completeness === 'complete'){
 console.log(todoArrLine);
 }
 }
-
+ 
 const saveTodos = function(){
-    const rows = [];
-    for(const todo)
+    const rowOfStrings = [];
+    for(const todo of rows){
+    rowOfStrings.push(`${todo[0]}, ${todo[1]}`);
+
+
+    }
 }
