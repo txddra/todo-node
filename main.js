@@ -70,7 +70,8 @@ const saveTodos = function(){
     const rowOfStrings = [];
     for(const todo of rows){
     rowOfStrings.push(`${todo[0]}, ${todo[1]}`);
+}
+const newThings = rowOfStrings.join('\n');
+fs.writeFileSync('./todos.csv', newThings);
 
-
-    }
 }
